@@ -1,20 +1,16 @@
-# 在庫管理 CLI アプリケーション
+# Inventory Management
 
-## 概要
-- Event Sourcing の学習用プロジェクト。
+An inventory management CLI application created for learning Event Sourcing.
 
-## 学んだこと
-- Event Sourcing でデータを保存/取得する処理の実装方法。
+## What I leaned
+- How to store/retrieve data using Event Sourcing.
 
-## 参考資料
-- https://youtu.be/AUj4M-st3ic
-
-## 使い方
+## Usage
 ```bash
-# 1. ターミナルからアプリケーションを起動する。
+# 1. Start the application.
 go run ./cmd/
 
-# 2. 実行したい操作を選択し、コマンドを入力する。
+# 2. Select an operation and enter a command.
 R: Receive Inventory
 S: Ship Inventory
 A: Inventory Adjustment
@@ -23,12 +19,15 @@ E: Events
 Q: Quit
 > r
 
-# 3. 必要なパラメータを入力する。
+# 3. Enter parameters.
 > SKU: abc123
 > Quantity: 30
 
-# 4. 実行結果が表示される。
+# 4. The result is displayed.
 abc123 Received: 30
 
-# 5. 2に戻る。
+# 5. Return to step 2.
 ```
+
+## References
+- https://youtu.be/AUj4M-st3ic
